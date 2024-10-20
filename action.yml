@@ -55,6 +55,7 @@ runs:
         SHARE_LOG=no \
         USE_CCACHE=yes \
         DEBUG=yes \
+        VENDOR=Armbian \
         COMPRESS_OUTPUTIMAGE=sha,gpg,xz
     - name: Upload
       if: inputs.release-id != '' && inputs.github-token != ''
